@@ -1,7 +1,7 @@
 # Checklist System for Manufacture
 This is a simple [Go](https://go.dev/dl/) project for a backend and a simple [Next.js](https://nextjs.org) project for a frontend with crud, authentication, temporary database, and using vercel for deployment
 ## Getting Started
-
+Install Project go to [Here](/install.md)
 First, run the development server:
 
 ```bash
