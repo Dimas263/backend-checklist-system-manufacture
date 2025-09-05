@@ -1,4 +1,5 @@
-module backend-checklist
+//module backend-checklist
+module github.com/Dimas263/backend-checklist-system-manufacture
 
 go 1.24
 
