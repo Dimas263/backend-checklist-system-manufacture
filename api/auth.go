@@ -2,6 +2,7 @@ package api
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 )
 
@@ -23,10 +24,13 @@ func LoginHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var req LoginRequest
-	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+	err := json.NewDecoder(r.Body).Decode(&req)
+	if err != nil {
+		log.Println("Decode error:", err)
 		http.Error(w, "Invalid request", http.StatusBadRequest)
 		return
 	}
+	log.Println("Login attempt:", req.Username, req.Password)
 
 	if req.Username == "admin" && req.Password == "password123" {
 		resp := LoginResponse{
