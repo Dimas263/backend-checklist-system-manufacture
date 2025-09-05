@@ -1,6 +1,7 @@
 # Checklist System for Manufacture
-### Backend  : [https://backend-checklist-system-manufactur.vercel.app/](https://backend-checklist-system-manufactur.vercel.app/)
-### Frontend : [https://frontend-checklist-system-manufactu.vercel.app/](https://frontend-checklist-system-manufactu.vercel.app/)
+### Backend: <a href="https://backend-checklist-system-manufactur.vercel.app/" target="_blank">backend-checklist-system-manufactur.vercel.app</a>
+### Frontend: <a href="https://frontend-checklist-system-manufactu.vercel.app/" target="_blank">frontend-checklist-system-manufactu.vercel.app</a>
+
 This is a simple [Go](https://go.dev/dl/) project for a backend and a simple [Next.js](https://nextjs.org) project for a frontend with crud, authentication, temporary database, and using vercel for deployment
 ## Getting Started
 ### Install Project go to [Here](/Install.md)
