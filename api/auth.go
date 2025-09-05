@@ -38,3 +38,8 @@ func LoginHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Invalid username or password", http.StatusUnauthorized)
 	}
 }
+
+// Handler Fungsi yang diexport ke Vercel
+func Handler(w http.ResponseWriter, r *http.Request) {
+	LoginHandler(w, r)
+}
