@@ -1,6 +1,7 @@
 package main
 
 import (
+	main2 "backend-checklist/api"
 	"log"
 	"net/http"
 	"os"
@@ -25,8 +26,8 @@ func withCORS(next http.HandlerFunc) http.HandlerFunc {
 }
 
 func main() {
-	http.HandleFunc("/login", withCORS(LoginHandler))
-	http.HandleFunc("/checklist", withCORS(ChecklistHandler))
+	http.HandleFunc("api/login", withCORS(main2.LoginHandler))
+	http.HandleFunc("api/checklist", withCORS(main2.ChecklistHandler))
 
 	port := os.Getenv("PORT")
 	if port == "" {
